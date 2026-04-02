@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Carte - Bob Burger Chambéry</title>
+  <meta name="description" content="Découvrez le menu de Bob Burger : smash burgers décadents, burgers gourmets au fromage AOP, frites maison, au centre de Chambéry.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="" class="logo-img">
+          BOB<span>BURGER</span>
+        </a>
+      </div>
+      <div class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html" class="active">La Carte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <style>
+    .page-header {
+      padding: 150px 0 80px 0;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(26, 20, 18, 0.9) 0%, rgba(26, 20, 18, 0.7) 100%), url('images/burger1.jpg') center/cover;
+    }
+    .page-header h1 {
+      color: #fff;
+      font-size: 3.5rem;
+    }
+    .page-header p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    
+    .menu-item { border: 1px solid rgba(255,255,255,0.05); }
+    .sides-section {
+      background-color: var(--bg-color-alt);
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      margin-top: 4rem;
+    }
+    .side-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed rgba(255,255,255,0.1);
+      padding: 1rem 0;
+    }
+    .side-item:last-child { border-bottom: none; }
+    .side-title { font-weight: 600; color: var(--text-main); }
+    .side-price { color: var(--accent-white); font-family: var(--font-heading); font-weight: bold; }
+  </style>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Notre Carte</h1>
+      <p>Smash crushtillants ou Gourmets coulants, choisissez votre camp.</p>
+    </div>
+  </section>
+
+  <!-- La Carte -->
+  <section class="menu-section">
+    <div class="container">
+      
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Gourmets</span></h2>
+      <div class="menu-grid">
+        <!-- Item -->
+        <div class="menu-item">
+          <img src="images/cheese.jpg" alt="Le Savoyard" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Le Savoyard</span>
+              <span class="menu-item-price">13.50 €</span>
+            </div>
+            <p class="menu-item-desc">Steak façon boucher 150g, tranche généreuse de Reblochon AOP, poitrine fumée, salade, confiture d'oignons.</p>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="menu-item">
+          <img src="images/burger1.jpg" alt="L'Alpin" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">L'Alpin Braisé</span>
+              <span class="menu-item-price">14.00 €</span>
+            </div>
+            <p class="menu-item-desc">Steak façon boucher 150g, Tomme de Savoie, cèpes sautés au persil, roquette, mayo truffée.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Smash</span> Burgers</h2>
+      <div class="menu-grid">
+        <!-- Item -->
+        <div class="menu-item">
+          <img src="images/burger2.jpg" alt="Classic Smash" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Classic Smash</span>
+              <span class="menu-item-price">9.50 €</span>
+            </div>
+            <p class="menu-item-desc">Double steak smashé, double cheddar fondant, pickles maison, oignons rouges, sauce Bob signature.</p>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="menu-item">
+          <img src="images/burger1.jpg" alt="Bacon Smash" class="menu-item-img" style="filter: brightness(0.9);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bacon Smokey</span>
+              <span class="menu-item-price">11.00 €</span>
+            </div>
+            <p class="menu-item-desc">Double steak smashé, bacon croustillant, cheddar, oignons confits, sauce BBQ fumée.</p>
+          </div>
+        </div>
+        <!-- Item -->
+        <div class="menu-item">
+          <img src="images/store.jpg" alt="Végé Smash" class="menu-item-img" style="filter: brightness(0.7);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Le Végé Smash</span>
+              <span class="menu-item-price">10.00 €</span>
+            </div>
+            <p class="menu-item-desc">Steak végétal (Beyond Meat) smashé, cheddar mature, salade croquante, tomate, sauce aux herbes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sides -->
+      <div class="sides-section">
+        <h2 style="display:block; text-align:center; color: var(--accent-wood); font-size: 2rem;">Accompagnements & Boissons</h2>
+        <div style="max-width: 600px; margin: 2rem auto 0 auto;">
+          <div class="side-item">
+            <div>
+              <div class="side-title">Frites Maison</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Cuites en deux bains à la perfection</div>
+            </div>
+            <div class="side-price">3.50 €</div>
+          </div>
+          <div class="side-item">
+            <div>
+              <div class="side-title">Frites Cheddar & Bacon</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Nappées de cheddar fondu et éclats de bacon</div>
+            </div>
+            <div class="side-price">5.00 €</div>
+          </div>
+          <div class="side-item">
+            <div>
+              <div class="side-title">Onion Rings</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Beignets d'oignons dorés (par 6)</div>
+            </div>
+            <div class="side-price">4.50 €</div>
+          </div>
+          <div class="side-item" style="margin-top: 2rem;">
+            <div>
+              <div class="side-title">Sodas & Eaux</div>
+            </div>
+            <div class="side-price">2.50 €</div>
+          </div>
+          <div class="side-item">
+            <div>
+              <div class="side-title">Bière Locale - Brasserie du Mont Blanc</div>
+              <div style="font-size: 0.85rem; color: var(--text-muted);">Blanche, Blonde ou Rousse (33cl)</div>
+            </div>
+            <div class="side-price">4.50 €</div>
+          </div>
+        </div>
+      </div> <!-- End Sides -->
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 1.5rem;">
+          <a style="font-size:1.5rem;">BOB<span>BURGER</span></a>
+        </div>
+        <p>L'authentique expérience Smash & Gourmet au cœur de Chambéry.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Liens Utiles</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="concept.html">Notre Concept</a></li>
+          <li><a href="menu.html">La Carte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Mentions</h4>
+        <ul>
+          <li><a href="#">Mentions Légales</a></li>
+          <li><a href="#">Politique de Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Bob Burger, Chambéry. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
