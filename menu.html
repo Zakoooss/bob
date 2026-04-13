@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Carte - Bob Burger Chambéry</title>
+  <meta name="description" content="Découvrez le menu de Bob Burger : smash burgers décadents, burgers gourmets au fromage AOP, frites maison, au centre de Chambéry.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="" class="logo-img">
+          BOB<span>BURGER</span>
+        </a>
+      </div>
+      <div class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html" class="active">La Carte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <style>
+    .page-header {
+      padding: 150px 0 80px 0;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(26, 20, 18, 0.9) 0%, rgba(26, 20, 18, 0.7) 100%), url('images/burger1.jpg') center/cover;
+    }
+    .page-header h1 {
+      color: #fff;
+      font-size: 3.5rem;
+    }
+    .page-header p {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    
+    .menu-item { border: 1px solid rgba(255,255,255,0.05); }
+    .sides-section {
+      background-color: var(--bg-color-alt);
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      margin-top: 4rem;
+    }
+    .side-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dashed rgba(255,255,255,0.1);
+      padding: 1rem 0;
+    }
+    .side-item:last-child { border-bottom: none; }
+    .side-title { font-weight: 600; color: var(--text-main); }
+    .side-price { color: var(--accent-white); font-family: var(--font-heading); font-weight: bold; }
+  </style>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Notre Carte</h1>
+      <p>Smash crushtillants ou Gourmets coulants, choisissez votre camp.</p>
+    </div>
+  </section>
+
+  <!-- La Carte -->
+  <section class="menu-section">
+    <div class="container">
+      
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Burgers</span></h2>
+      <p style="text-align:center; color: var(--text-muted); font-size: 0.95rem; margin-top: -1.5rem; margin-bottom: 2.5rem;">
+        TOUS NOS BURGERS SONT DISPONIBLES EN VERSION VÉGÉTARIENNE<br>
+        <span style="font-size: 0.85rem; color: var(--accent-wood);">*Possibilité d'ajouter des suppléments sur tous les burgers (de 1€ à 3€)</span>
+      </p>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/bob-classique.jpg" alt="Bob Classique" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob Classique</span>
+              <span class="menu-item-price">9,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 12,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Bœuf ou poulet, cheddar, oignons caramélisés, salade, tomate, cornichons, sauce BOB.<br><br>
+            <em>Double/Mixte (+3€) : 2x viandes, 2x cheddar.</em></p>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <img src="images/bob-montagne.jpg" alt="Bob Montagne" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob Montagne</span>
+              <span class="menu-item-price">12,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 15,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Bœuf, oignons caramélisés, <strong>RACLETTE</strong> ou <strong>REBLOCHON</strong>, bacon, galette de pdt, salade, tomate, sauce oignon.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/bob-dambert.jpg" alt="Bob d'Ambert" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob d'Ambert</span>
+              <span class="menu-item-price">12,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 15,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Bœuf, oignons caramélisés, fourme d'ambert, salade, tomate, sauce oignon.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/bob-de-m-seguin.jpg" alt="Bob de M.Seguin" class="menu-item-img" style="filter: brightness(0.9);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob de M.Seguin</span>
+              <span class="menu-item-price">12,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 15,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Bœuf, oignons caramélisés, chèvre, miel, noix, salade, tomate, sauce moutarde.</p>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <img src="images/bob-fermier.jpg" alt="Bob Fermier" class="menu-item-img" style="filter: brightness(0.8);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob Fermier</span>
+              <span class="menu-item-price">12,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 15,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Steak de bœuf, oignons caramélisés, cheddar, bacon de dinde, oeuf, salade, tomate, cornichons, sauce barbecue.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/bob-oriental.jpg" alt="Bob Oriental" class="menu-item-img" style="filter: hue-rotate(10deg);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob Oriental</span>
+              <span class="menu-item-price">12,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 15,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Steak de bœuf saveur orientale, poivrons grillés à l'orientale, cheddar, salade, tomate, sauce épicée.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/bob-toque.jpg" alt="Bob Toqué" class="menu-item-img" style="filter: contrast(1.1);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Bob Toqué</span>
+              <span class="menu-item-price">12,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 15,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Recette évolutive selon l’humeur du chef !</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smash Burgers -->
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Smash</span> Burgers</h2>
+      <p style="text-align:center; color: var(--text-muted); font-size: 0.95rem; margin-top: -1.5rem; margin-bottom: 2.5rem;">
+        DISPONIBLES EN SIMPLE, DOUBLE OU TRIPLE !<br>
+        <span style="font-size: 0.85rem; color: var(--accent-wood);">*Possibilité d'ajouter des suppléments (de 1€ à 3€)</span>
+      </p>
+
+      <div class="menu-grid" style="max-width: 400px; margin: 0 0 4rem 0;">
+        <div class="menu-item">
+          <img src="images/classic-smash.jpg" alt="Classic Smash" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Classic Smash</span>
+            </div>
+            <p class="menu-item-desc" style="margin-bottom: 1rem;">Steak smashé croustillant, cheddar fondant, pickles maison, oignons rouges, sauce Bob signature.</p>
+            <p class="menu-item-desc" style="margin-bottom: 0;">
+              Simple : <strong>7,50 €</strong> | Double : <strong>9,50 €</strong> | Triple : <strong>11,50 €</strong>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bobdogs -->
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Bobdogs</span></h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/american-dog.jpg" alt="American Dog" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">American Dog</span>
+              <span class="menu-item-price">4,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 7,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Pain hot dog, saucisse de poulet, moutarde américaine, ketchup.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/classique-dog.jpg" alt="Classique Dog" class="menu-item-img" style="filter: brightness(0.9);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Classique Dog</span>
+              <span class="menu-item-price">5,20 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 8,20€</span></span>
+            </div>
+            <p class="menu-item-desc">Pain hot dog, saucisse de poulet, raclette, oignons frits, ketchup.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/le-bling-bling.jpg" alt="Le Bling Bling" class="menu-item-img" style="filter: contrast(1.1);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Le Bling Bling</span>
+              <span class="menu-item-price">5,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 8,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Pain hotdog, saucisse de poulet, sauce cheddar maison, oignons frits, moutarde américaine, ketchup.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/le-montagnard.jpg" alt="Le Montagnard" class="menu-item-img" style="filter: saturate(1.2);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Le Montagnard</span>
+              <span class="menu-item-price">6,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 9,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Pain hotdog, saucisse de poulet, raclette, oignons frits, moutarde américaine, ketchup.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/le-vege-dog.jpg" alt="Le Végé Dog" class="menu-item-img" style="filter: hue-rotate(-20deg);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Le Végé Dog</span>
+              <span class="menu-item-price">5,90 € <span style="font-size:0.8rem; font-weight:normal; color:#aaa;">/ Menu 8,90€</span></span>
+            </div>
+            <p class="menu-item-desc">Pain hotdog, saucisse végétarienne, oignons frits, moutarde américaine, ketchup.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/le-mini.jpg" alt="Le Mini" class="menu-item-img" style="filter: brightness(1.1);">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Le Mini</span>
+              <span class="menu-item-price">2,90 €</span>
+            </div>
+            <p class="menu-item-desc">Pain hotdog, saucisse de poulet, moutarde américaine, ketchup.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salades -->
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Salades</span></h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/salade-poulet.jpg" alt="Salade Poulet" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Salade Poulet</span>
+              <span class="menu-item-price">8,90 €</span>
+            </div>
+            <p class="menu-item-desc">Salade, tomates, émincé de poulet grillé, oignons frits, fromage de chèvre.</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/salade-vegetarienne.jpg" alt="Salade Végétarienne" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Salade Végétarienne</span>
+              <span class="menu-item-price">8,90 €</span>
+            </div>
+            <p class="menu-item-desc">Selon légumes du moment.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Starters -->
+      <h2 class="menu-category-title">Les <span style="color: var(--text-main);">Starters</span></h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/chicken-wings.jpg" alt="Chicken Wings" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Chicken Wings</span>
+            </div>
+            <p class="menu-item-desc" style="margin-top: 1rem; flex-grow: 0;">
+              x3 : <strong>3,90 €</strong> &nbsp;|&nbsp; 
+              x6 : <strong>5,90 €</strong> &nbsp;|&nbsp; 
+              x9 : <strong>7,90 €</strong>
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/nuggets-poulet.jpg" alt="Nuggets de Poulet" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Nuggets de Poulet</span>
+            </div>
+            <p class="menu-item-desc" style="margin-top: 1rem; flex-grow: 0;">
+              x3 : <strong>4,90 €</strong> &nbsp;|&nbsp; 
+              x6 : <strong>6,90 €</strong> &nbsp;|&nbsp; 
+              x9 : <strong>8,90 €</strong>
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-content" style="justify-content: center; text-align: center;">
+            <h3 style="color: var(--accent-wood); font-size: 1.8rem; margin-bottom: 2rem;">Les Bob Box</h3>
+            <div style="margin-bottom: 1.5rem;">
+              <span class="menu-item-title" style="display:block; font-size: 1.5rem;">BOB BOX</span>
+              <span class="menu-item-price" style="display:block; margin: 0.5rem 0;">15,80 €</span>
+              <span style="color: var(--text-muted);">9 nuggets + 9 Chicken wings</span>
+            </div>
+            <div style="margin-bottom: 1rem;">
+              <span class="menu-item-title" style="display:block; font-size: 1.5rem;">MAXI BOB BOX</span>
+              <span class="menu-item-price" style="display:block; margin: 0.5rem 0;">24,80 €</span>
+              <span style="color: var(--text-muted);">9 nuggets + 9 Chicken wings + 2 frites + 2 softs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts & Frites -->
+      <h2 class="menu-category-title"><span style="color: var(--text-main);">Frites</span> & Desserts</h2>
+      <div class="menu-grid">
+        <!-- Frites Maison -->
+        <div class="menu-item">
+          <img src="images/frites-maison.jpg" alt="Frites Maison" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Frites Maison</span>
+              <span class="menu-item-price">3,00 €</span>
+            </div>
+            <p class="menu-item-desc" style="margin-bottom: 1rem;">Cuisson à la belge</p>
+            <div style="border-top: 1px dashed rgba(255,255,255,0.1); padding-top: 1rem; font-size: 0.9rem;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                <span style="color: var(--text-muted);">Supplément sauce cheddar maison</span>
+                <span class="side-price">+ 1,00 €</span>
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <span style="color: var(--text-muted);">Supplément sauce cheddar + oignons frits</span>
+                <span class="side-price">+ 1,50 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desserts -->
+        <div class="menu-item">
+          <img src="images/dessert-patissier.jpg" alt="Dessert" class="menu-item-img">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <span class="menu-item-title">Dessert</span>
+              <span class="menu-item-price">3,50 €</span>
+            </div>
+            <p class="menu-item-desc">Selon l'humeur du pâtissier</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sides & Drinks -->
+      <div class="sides-section">
+        <h2 style="display:block; text-align:center; color: var(--accent-wood); font-size: 2rem;">Boissons & Menu Enfant</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 3rem; max-width: 1000px; margin: 3rem auto 0 auto;">
+          <div style="flex: 1; min-width: 300px;">
+            <h3 style="color: var(--text-main); font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--accent-red); padding-bottom: 0.5rem; display: inline-block;">Boissons</h3>
+            
+            <div class="side-item">
+              <div class="side-title">Softs</div>
+              <div class="side-price">2,00 €</div>
+            </div>
+            <div class="side-item">
+              <div class="side-title">Thé, Café, Déca</div>
+              <div class="side-price">1,50 €</div>
+            </div>
+            <div class="side-item">
+              <div>
+                <div class="side-title">Thé Glacé Bio</div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">(Supp 1€ en menu)</div>
+              </div>
+              <div class="side-price">3,00 €</div>
+            </div>
+
+            <!-- Menu Enfant -->
+            <div style="background-color: var(--bg-color); padding: 1.5rem; border-radius: 8px; margin-top: 2rem; border: 2px dashed var(--accent-wood);">
+              <h3 style="color: var(--accent-wood); font-size: 1.5rem; text-align: center; margin-bottom: 1rem;">MENU ENFANT</h3>
+              <div style="text-align: center; color: var(--accent-white); font-weight: bold; font-size: 1.1rem; margin-bottom: 1rem;">
+                Mini Bob Dog <br> <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-muted);">ou</span> <br>
+                Mini Burger <br> <span style="font-size: 0.8rem; font-weight: normal; color: var(--text-muted);">ou</span> <br>
+                Nuggets de Poulet x3
+              </div>
+              <div style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">
+                + FRITES + BOISSON (Caprisun ou Bouteille d'eau) + SURPRISE
+              </div>
+              <div style="text-align: center;">
+                <span style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--accent-wood); background: #000; padding: 0.5rem 1.5rem; border-radius: 30px;">6,90 €</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div> <!-- End Sides -->
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 1.5rem;">
+          <a style="font-size:1.5rem;">BOB<span>BURGER</span></a>
+        </div>
+        <p>L'authentique expérience Smash & Gourmet au cœur de Chambéry.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Liens Utiles</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="concept.html">Notre Concept</a></li>
+          <li><a href="menu.html">La Carte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Mentions</h4>
+        <ul>
+          <li><a href="#">Mentions Légales</a></li>
+          <li><a href="#">Politique de Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Bob Burger, Chambéry. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
