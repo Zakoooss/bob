@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bob Burger - Les Meilleurs Burgers de Chambéry</title>
+  <meta name="description" content="Découvrez Bob Burger, des burgers gourmets et smash burgers authentiques au cœur de Chambéry. Venez savourer nos recettes uniques avec des produits de qualité.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="" class="logo-img">
+          BOB<span>BURGER</span>
+        </a>
+      </div>
+      <div class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="concept.html">Concept</a></li>
+        <li><a href="menu.html">La Carte</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg" style="background: linear-gradient(135deg, rgba(26, 20, 18, 0.9) 0%, rgba(26, 20, 18, 0.4) 100%), url('images/store.jpg') center/cover;"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1>L'Expérience<br><span class="text-accent" style="color: var(--accent-red);">Burger Gourmet</span></h1>
+        <span class="hero-subtitle" style="color: #ffffff;">ARTISANAL & LOCAL</span>
+        <p class="hero-desc">Bienvenue chez Bob Burger, où la générosité savoyarde culmine dans un bun. Des produits d'exception, un pain boulanger moelleux, et des fromages AOP de nos montagnes pour un goût inoubliable.</p>
+        <div style="display:flex; gap:1rem;">
+          <a href="menu.html" class="btn">Voir la carte</a>
+          <a href="#horaires" class="btn btn-outline">Nous trouver</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nouveautés / Teaser -->
+  <section class="showcase">
+    <div class="container">
+      <h2 style="text-align:center; display:block; margin: 0 auto 4rem auto; max-width: max-content;">À l'affiche</h2>
+      <div class="showcase-flex">
+        <div class="showcase-text">
+          <h3 style="font-size: 2rem; margin-bottom: 1rem;">Le Bob <span style="color: var(--accent-red);">Montagnard</span></h3>
+          <p>L'icône de notre carte Gourmet. Un hommage à nos racines savoyardes avec un burger généreux au véritable Reblochon AOP, confit d'oignons maison et un bun moelleux tout juste toasté.</p>
+          <p>L'alliance parfaite entre le street-food de qualité et la générosité de la montagne. Venez croquer dans notre best-seller !</p>
+          <a href="menu.html" class="btn" style="margin-top: 2rem;">Découvrir la carte</a>
+        </div>
+        <div class="showcase-img">
+          <img src="images/burger1.jpg" alt="Le Bob Montagnard - Burger gastronomique">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horaires & Accès -->
+  <section id="horaires" class="features" style="background-color: var(--bg-color);">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i data-lucide="clock"></i></div>
+          <h3>Horaires d'ouverture</h3>
+          <p>Mardi au Jeudi : 11h30 - 14h00 | 18h30 - 22h00</p>
+          <p>Vendredi et Samedi : 11h30 - 14h30 | 18h30 - 22h30</p>
+          <p style="color: var(--accent-red); font-weight:600; margin-top:1rem;">Fermé le Dimanche et Lundi</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i data-lucide="map-pin"></i></div>
+          <h3>Nous Trouver</h3>
+          <p>12 Rue Fictive de Bob</p>
+          <p>73000 Chambéry, France</p>
+          <a href="#" class="btn" style="margin-top: 1.5rem; width: 100%;">Voir sur Google Maps</a>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i data-lucide="phone"></i></div>
+          <h3>Contact & Commandes</h3>
+          <p>Sur place ou à emporter</p>
+          <p>Téléphone : 04 79 XX XX XX</p>
+          <div style="margin-top: 1rem;">
+            <i data-lucide="instagram" style="color:var(--text-muted); margin-right: 1rem; cursor:pointer;"></i>
+            <i data-lucide="facebook" style="color:var(--text-muted); cursor:pointer;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom: 1.5rem;">
+          <a style="font-size:1.5rem;">BOB<span>BURGER</span></a>
+        </div>
+        <p>L'authentique expérience Smash & Gourmet au cœur de Chambéry.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Liens Utiles</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="concept.html">Notre Concept</a></li>
+          <li><a href="menu.html">La Carte</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Mentions</h4>
+        <ul>
+          <li><a href="#">Mentions Légales</a></li>
+          <li><a href="#">Politique de Confidentialité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Bob Burger, Chambéry. Tous droits réservés.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
